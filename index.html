@@ -5,12 +5,17 @@
         
         <style>
             body {
-                background: #ffa101;
+                background: rgb(255,204,1);
+                background: radial-gradient(circle, rgba(255,204,1,1) 0%, rgba(255,161,1,1) 100%);
             }
 
             .logo {
                 image-rendering: pixelated;
                 width: 100%
+            }
+
+            a {
+                color: black;
             }
         </style>
 
@@ -18,13 +23,13 @@
     <body>
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-sm-6 col-6 col-lg-3 mt-5 mx-auto">
+                <div class="col-md-6 col-sm-8 col-8 col-lg-4 mt-5 mx-auto">
                     <img src="logo.png" class="logo">
                 </div>
             </div>
-            <div class="col-md-10 col-sm-12 col-lg-6 mx-auto my-3">
+            <div class="col-md-10 col-sm-12 col-lg-8 mx-auto my-3">
                 <div class="row my-3">
-                    <iframe width="560" height="415" src="https://www.youtube.com/embed/2rx35MY8YeE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe height="415" src="https://www.youtube.com/embed/2rx35MY8YeE?rel=0&autoplay=1&mute=1&controls=0" frameborder="0" allowfullscreen></iframe>
                 </div>
                 <div class="row">
                     <div class="col-md-10 mx-auto">
@@ -45,4 +50,7 @@
             </div>
         </div>
     </body>
+    <footer class="mt-5 text-center">
+        <a href="./privacy-policy">Privacy-Policy</a>
+    </footer>
 </html>
