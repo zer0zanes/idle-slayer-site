@@ -28,6 +28,26 @@
                 display: inline-block;
                 padding: 0 5px;
             }
+            .video-container {
+                position: relative;
+                width: 100%;
+                padding-bottom: 56.25%;
+            }
+
+            .video {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border: 0;
+            }
+
+            @media only screen and (max-width: 1400px) {
+                .store {
+                    padding-bottom: 20px;
+                }
+            }
         </style>
 
     </head>
@@ -39,23 +59,23 @@
                 </div>
             </div>
             <div class="col-md-10 col-sm-12 col-lg-8 mx-auto my-3">
-                <div class="row my-3">
-                    <iframe height="483" src="https://www.youtube.com/embed/2rx35MY8YeE?rel=0&autoplay=1&mute=1&controls=0" frameborder="0" allowfullscreen></iframe>
+                <div class="video-container my-3">
+                    <iframe class="video" height="315" width="560" src="https://www.youtube.com/embed/2rx35MY8YeE?rel=0&autoplay=1&mute=1&controls=0" frameborder="0" allowfullscreen></iframe>
                 </div>
                 <div class="row">
-                    <div class="col-md-10 mx-auto">
+                    <div class="col-8 col-sm-8 col-md-6 col-xl-6 col-xxl-12 mx-auto">
                         <div class="row">
-                            <div class="col my-auto">
+                            <div class="col-xl-12 col-xxl-4 mx-auto store">
                                 <a class="d-inline-block w-100" href='https://play.google.com/store/apps/details?id=com.pabloleban.IdleSlayer&hl=en_US&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
                                     <img class="w-100" alt='Get it on Google Play' src='googlebadge.png'/>
                                 </a>
                             </div>
-                            <div class="col my-auto">
+                            <div class="col-xl-12 col-xxl-4 mx-auto store">
                                 <a class="d-inline-block w-100" href='https://apps.apple.com/us/app/idle-slayer/id1526599527'>
                                     <img class="w-100" alt='Download on the App Store' src='applebadge.png'/>
                                 </a>
                             </div>
-                            <div class="col my-auto">
+                            <div class="col-xl-12 col-xxl-4 mx-auto store">
                                 <a class="d-inline-block w-100" href='https://store.steampowered.com/app/1353300/Idle_Slayer/'>
                                     <img style="filter: invert(1);" class="w-100" alt='Get it on Steam' src='steam-logo.png'/>
                                 </a>
