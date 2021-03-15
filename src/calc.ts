@@ -167,6 +167,8 @@ const setup_map_value_area = async (): Promise<void> => {
 		});
 	}
 
+	setup_sensible_defaults();
+
 	need_for_kill_input = document.querySelector("input[name=needForKill]");
 	enemy_invasion_input = document.querySelector("input[name=enemyInvasion]");
 	multa_hostibus_input = document.querySelector("input[name=multaHostibus]");
@@ -480,6 +482,31 @@ const sort_table_inner = (t_body: HTMLElement, header_idx: number, dir: SortDire
 		t_body.appendChild(row);
 	}
 };
+const setup_sensible_defaults = () => {
+	//pattern level set to 3
+	pattern_level_input = document.querySelector("input[name=maxPatternLevel]");
+	pattern_level_input!.value = String(3);
+	// need for kill, enemy invasion, multa hostibus checked
+	need_for_kill_input = document.querySelector("input[name=needForKill]");
+	enemy_invasion_input = document.querySelector("input[name=enemyInvasion]");
+	multa_hostibus_input = document.querySelector("input[name=multaHostibus]");
+	need_for_kill_input!.checked = true;
+	enemy_invasion_input!.checked = true;
+	multa_hostibus_input!.checked = true;
+	//bumblebee & alpha worm checked
+	let alpha_worm_input:HTMLInputElement | null = document.querySelector("input[name=Alpha_Worm]");
+	alpha_worm_input!.checked = true;
+	let bumblebee_input: HTMLInputElement | null = document.querySelector("input[name=Bumblebee]");
+	bumblebee_input!.checked = true;
+	// hills golem, adult yeti, archdemon checked
+	let hills_golem_input:HTMLInputElement | null = document.querySelector('input[name="Hills\'_Golem"]');
+	let adult_yeti_input:HTMLInputElement | null = document.querySelector("input[name=Adult_Yeti]");
+	let archdemon_input:HTMLInputElement | null = document.querySelector("input[name=Archdemon]");
+	hills_golem_input!.checked = true;
+	adult_yeti_input!.checked = true;
+	archdemon_input!.checked = true;
+
+}
 
 const setup_random_box_simulation = () => {
 	//enumerate options
