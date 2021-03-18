@@ -19,6 +19,10 @@ document.addEventListener("DOMContentLoaded", () => {
 	for (const header of sortable_headers) {
 		header.addEventListener("click", change_table_sort);
 	}
+	const spawn_rate_mods = document.querySelectorAll(".spawnRateMod");
+	for (const mod of spawn_rate_mods) {
+		mod.addEventListener("click", calculate_map_values);
+	}
 });
 
 const load_json = <T>(url: string): Promise<T> => {
